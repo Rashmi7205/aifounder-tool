@@ -19,7 +19,7 @@ const Homepage = () => {
             Navigate through a curated collection of the latest and most innovative AI tools available across various domains. From art and creativity to conversational AI, design, e-commerce, finance, education, and beyond, we've meticulously curated a diverse range of tools to suit every need.
             </p>
             <button className="w-2/5 font-semibold py-3 bg-gradient-to-r from-purple-700 to-purple-300 rounded-full" >
-              Find your tool ->
+              Find your tool 
             </button>
           </div>
           <div className="w-2/5 h-full flex items-center justify-center">
