@@ -1,6 +1,6 @@
-import Navbar from './Navbar.tsx';
-import Sidebar from './Sidebar.tsx';
-import Card from './Card.tsx';
+import Navbar from './Navbar';
+import Sidebar from './Sidebar';
+import Card from './Card';
 
 export {
     Navbar,
