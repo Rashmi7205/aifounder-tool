@@ -3,14 +3,16 @@ import { useEffect, useState } from "react";
 import '@/app/globals.css';
 import Link from "next/link";
 
-interface CardProps{
-    Site_name:string;
-    link:string;
-    type:string;
-    category:string;
-};
+interface CardProps {
+  cardDetails: {
+      Site_name: string;
+      category: string;
+      type: string;
+      link: string;
+  };
+}
 
-const Card: React.FC<CardProps> = (cardDetails:CardProps) => {
+const Card: React.FC<CardProps> = ({cardDetails}:CardProps) => {
   const colors = ["#F6995C", "#51829B", "#FF3EA5", "#9195F6", "#A5DD9B"];
 
   const [data,setData] = useState({
