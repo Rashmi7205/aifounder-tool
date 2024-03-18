@@ -1,22 +1,20 @@
 "use client";
-
-import getMetaData from "metadata-scraper";
 import { useEffect, useState } from "react";
 import '@/app/globals.css';
 import Link from "next/link";
 
 interface CardProps{
-    site_name:string;
+    Site_name:string;
     link:string;
     type:string;
     category:string;
 };
 
-const Card: React.FC<CardProps> = ({ cardDetails }) => {
+const Card: React.FC<CardProps> = (cardDetails:CardProps) => {
   const colors = ["#F6995C", "#51829B", "#FF3EA5", "#9195F6", "#A5DD9B"];
 
   const [data,setData] = useState({
-      siteName: cardDetails.site_name || "",
+      siteName: cardDetails.Site_name || "",
       link:cardDetails.link || "#",
       type:cardDetails.type || 'type',
       category:cardDetails.category||"category",
