@@ -26,7 +26,7 @@ const Homepage = () => {
             </Link>
           </div>
           <div className="w-full md:w-2/5 md:h-full h-1/2 flex items-center justify-center">
-              <div className="bg-[url('/images/home.jpg')] bg-center bg-cover h-full  w-3/5 md:h-3/5 rounded-[60px] rounded-bl-[190px] shadow-md ">
+              <div className="bg-[url('/images/home.jpg')] bg-center bg-cover h-full  w-3/5 md:h-3/5 rounded-[60px] rounded-bl-[30px] md:rounded-bl-[190px] shadow-md ">
 
               </div>
           </div>
