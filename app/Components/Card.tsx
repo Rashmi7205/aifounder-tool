@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({cardDetails}:CardProps) => {
 
   const getWebInfo = async ()=>{
     try {
-      const res = await  fetch('https://aifounder-tool.vercel.app//api/getdata',{
+      const res = await  fetch('http://localhost:3000/api/getdata',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -37,7 +37,6 @@ const Card: React.FC<CardProps> = ({cardDetails}:CardProps) => {
       });
 
       const {metaData} = await res.json();
-      console.log(metaData)
       setData({
         ...data,
         image:metaData.icon,
